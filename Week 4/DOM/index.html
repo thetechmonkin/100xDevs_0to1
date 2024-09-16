@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="first" type="text" placeholder="First number">
+    <br/>
+    <input id="second" type="text" placeholder="Second Number"> 
+    <br>
+    <button onclick="populateSum()">Calculate Sum</button>
+    <div id="finalSum">
+
+    </div>
+    <script>
+        const element = document.getElementById('finalSum');
+
+        function populateSum(){
+            const a = document.getElementById("first").value;
+            const b = document.querySelector("#second").value;
+
+            const sum = parseInt(a) + parseInt(b);
+
+            element.innerHTML = "The sum of first and second number is " + sum;
+        }
+    </script>
+</body>
+</html>
