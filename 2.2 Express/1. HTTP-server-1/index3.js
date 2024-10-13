@@ -29,6 +29,7 @@ const PORT = 3000;
 // });
 
 // MIDDLEWARES
+//Middleware in Express. js is a function that is accessible to the request, response objects and the next middleware function. 
 
 const userMiddleWare = (req, res, next) => {
     const username = req.headers.username;
@@ -40,7 +41,7 @@ const userMiddleWare = (req, res, next) => {
         });
     }
     else
-        next();
+        next();  // Make sure to use
 };
 
 const kidneysMiddleware = () => {
@@ -84,7 +85,7 @@ app.get('/heart-checkup', userMiddleWare, (req, res) => {
 // It helps you to give the end user a better error message
 // we can have multiple global caches
 
-app.use((wrr, req, res, next) => {
+app.use((err, req, res, next) => {
     res.status(500).json({
         msg: "Sorry something is wrong with out server",
     });

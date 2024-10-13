@@ -3,7 +3,7 @@
 /*
     ex schema for 
     {
-        email
+        email: string
         password: string
         country: IN or US
     }

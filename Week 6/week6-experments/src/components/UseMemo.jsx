@@ -50,4 +50,5 @@ export default UseMemo;
 // Memoization - It means remembering some output given an input and not computing it again.
 // It is used to optimize performance by avoiding unnecessary computations.
 
-// useMemo Hook -
+// useMemo Hook - It is a hook that would make sure a certain code base will only run if some dependencies changes in the re render.
+

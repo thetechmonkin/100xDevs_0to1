@@ -1,5 +1,8 @@
 // Hooks
 
+// State : In React, state is a built-in JavaScript object that stores information about a component and allows 
+//         it to remember that information between renders
+
 // 1. side effects:- In react concept of side effects encompasses any operation that 
 //    reach outside the functional scope of react component. These operations can affect other 
 //    components, the DOM, or the browser or perform async data fetching. 
